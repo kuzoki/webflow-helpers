@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     riveContainers.forEach(riveContainer => {
          // Get the 'rive-url' attribute value
         const riveUrl = riveContainer.getAttribute('kuzo-rive-url');
-        const stateMachine = riveContainer.getAttribute('state-machine');
+        const stateMachine = riveContainer.getAttribute('kuzo-rive-state-machine');
         // create a canvas element
         const canvas = document.createElement('canvas');    
         canvas.width =  500;
