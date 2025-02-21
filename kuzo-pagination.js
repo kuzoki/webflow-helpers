@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             newClone.classList.add("disabled");
           } else {
             newClone.href = `?${paramPrefix}_page=${page}`;
-            if (style === "Balanced") {
+            if (style === "balanced") {
               newClone.addEventListener("click", () => updatePagination(page, totalPages));
             }
             if (page === current) {
@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.querySelector("[kuzo-pagination='default']")) {
       renderPagination("default");
     }
-    if (document.querySelector("[kuzo-pagination='Balanced']")) {
-      renderPagination("Balanced");
+    if (document.querySelector("[kuzo-pagination='balanced']")) {
+      renderPagination("balanced");
     }
 });
   
