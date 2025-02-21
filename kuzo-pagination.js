@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     };
   
-    // Initialize both styles
-    renderPagination("default");
-    renderPagination("Balanced");
+   
   
     // Generate an array of pages to display
     function generatePagination(currentPage, totalPages, type = "default") {
@@ -108,6 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
           window.location.href = url.toString(); // Navigate with updated parameters
         });
       });
+    }
+
+     // Initialize both styles
+    if (document.querySelector("[kuzo-pagination='default']")) {
+      renderPagination("default");
+    }
+    if (document.querySelector("[kuzo-pagination='Balanced']")) {
+      renderPagination("Balanced");
     }
 });
   
