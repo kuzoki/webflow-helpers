@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const renderPagination = (style) => {
-      const paginationContainers = [...document.querySelectorAll(`[data-pagination='${style}']`)];
+      const paginationContainers = [...document.querySelectorAll(`[kuzo-pagination='${style}']`)];
   
       paginationContainers.forEach((container) => {
         const totalPages = Number(container.getAttribute("pages"));
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         const paramPrefix = nextButton.getAttribute("href")?.match(/([^?=&]+)_page=/)?.[1] || "page";
         const current = getCurrentPageByPrefix(paramPrefix);
-        const numbersPlaceholder = container.querySelector("[data-pagination-numbers]");
+        const numbersPlaceholder = container.querySelector("[kuzo-pagination-numbers]");
         if (!numbersPlaceholder) return;
   
         const firstPageElement = numbersPlaceholder.querySelector("a");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return pageData ? pageData.page : 1; // Return the page if found, otherwise default to 1
     }
   
-    const paginationLinks = document.querySelectorAll("[data-pagination] a");
+    const paginationLinks = document.querySelectorAll("[kuzo-pagination] a");
     if (paginationLinks.length > 0) {
       paginationLinks.forEach((link) => {
         link.addEventListener("click", function (event) {
