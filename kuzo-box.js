@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .custom-modal-image{
           margin: 0 auto;
+          cursor: pointer;
         }
       `;
     document.head.appendChild(style);
