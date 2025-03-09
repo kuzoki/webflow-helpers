@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
           opacity: 0;
           transform: scale(0.95);
           transition: all 0.3s ease;
+          background: #1a1919b5;
+          padding: 20px;
         }
         .custom-modal-content.show {
           opacity: 1;
@@ -84,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
           font-size: 16px;
           font-weight: 600;
           margin-top: 10px;
+        }
+        .custom-modal-image{
+          margin: 0 auto;
         }
       `;
     document.head.appendChild(style);
