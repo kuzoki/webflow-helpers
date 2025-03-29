@@ -1,0 +1,29 @@
+/* Add a background image to a class */
+.bg-class-1 {
+    background-image: url('img/img.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    width: 100px;
+    height: 100px;
+}
+.bg-class-2 {
+    background-image: url('./img/img.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    width: 100px;
+    height: 100px;
+}
+.bg-class-3 {
+    background-image: url('../img/img.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    width: 100px;
+    height: 100px;
+}
+.bg-class-4 {
+    background-image: url('/img/img.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    width: 100px;
+    height: 100px;
+}
